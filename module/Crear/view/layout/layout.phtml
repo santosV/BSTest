@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php echo $this->headMeta()->setCharset('utf8')?>
+    <?php echo $this->headTitle('Baja Salads')?>
+    <?php echo $this->headMeta()->appendName('description','bajasalads, ensaladas, guaymas, baguettes, jugos, yogur, comida saludable, sandwich, paninis, vegie, comida vegetariana, nutrición')?>
+    <?php echo $this->headMeta()->appendName('author','Baja Salads')?>
+    <?php echo $this->headMeta()->appendName('keywords','bajasalads, ensaladas, guaymas, baguettes, jugos, yogur, comida saludable, sandwich, paninis, vegie, comida vegetariana, nutrición')?>
+    <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1')?>
+    <?php echo $this->headLink()->prependStylesheet($this->basePath().'/css/style.css')?>
+    <?php echo $this->headLink()->prependStylesheet($this->basePath().'/css/bootstrap.min.css')?>
+    <?php echo $this->headLink()->prependStylesheet($this->basePath().'/css/image-picker.css')?>
+
+    
+
+
+</head>
+<body>  
+     
+    <div id="contentWrapper" class="container">
+        <?php echo $this->content; ?>
+    </div>
+    <script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery.js"></script>
+    <script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/image-picker.min.js"></script>
+    <script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/main.js"></script>
+    <script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/crea_tu_ensalada.js"></script>
+</body>
+</html>
+

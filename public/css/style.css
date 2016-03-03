@@ -1,0 +1,27 @@
+body{ background-color: #f1f1f1;}
+.tab-content img{height: 70px;width: 70px;cursor:pointer;}
+.container .nav li {width: 20%;pointer-events: none;}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+.btnSiguiente,.btnAtras,.btn-compra{margin-bottom: 15px;}
+/*******************Media Queries************************/
+/*CEL chico*/
+@media screen and (max-width: 481px){
+.container .nav li {font-size: .7em;}
+/*CEL mediano*/
+@media screen and (min-width: 482px) and(max-width: 768px) {
+}
+/*TABLET*/
+@media screen and (min-width: 769px) and (max-width: 991px){
+}
+/*DESKTOP*/
+@media screen and (min-width: 992px) and (max-width: 1199px){  
+}
+/*FULL */
+@media screen and (min-width: 1200px){   
+}
