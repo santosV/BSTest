@@ -22,9 +22,9 @@
 
             <select onChange="calcularCalorias()" id="porciones" class="image-picker show-labels show-html">
                   <option value="nada">nada</option>
-                  <option id="chico"  data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="300" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/chico.png" value="chico">Chico</option>
-                  <option id="mediano" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal ="500"data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/mediano.png" value="mediano" >Mediano</option>
-                  <option id="grande" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal ="600"data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/grande.png" value="grande">Grande</option>
+                  <option id="chico"  data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="300" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/chico.png" value="chico">Chico</option>
+                  <option id="mediano" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal ="500"data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/mediano.png" value="mediano" >Mediano</option>
+                  <option id="grande" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal ="600"data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/grande.png" value="grande">Grande</option>
             </select>
           <input type="button" class="btn btn-primary btnSiguientevalid" value="Siguiente"  />
 
@@ -32,43 +32,45 @@
           <div id="paso2" class="tab-pane fade">
           <h3>Pollos y Mariscos</h3> 
             <select id="pollos_mariscos" onChange="calcularCalorias()" class="image-picker show-labels limit_callback show-html" multiple="multiple">
-                  <option id="1" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/pollo1.jpg" value="1">Asado</option>
-                  <option id="2" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/pollo2.jpg" value="2">Picoso</option>
-                  <option id="3" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/pollo1.jpg" value="3">BBQ</option>
-                  <option id="4" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/pollo2.jpg" value="4">Búfalo</option>
-                   <option id="5" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/pollo1.jpg" value="5">Parmesano</option>
-                  <option id="6" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/pollo2.jpg" value="6">Otro</option>
-                  <option id="7" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/pollo1.jpg" value="7">Atún</option>
-                  <option id="8" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/marisco2.jpg" value="8">Surimi</option>
-                  <option id="9"  data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/marisco1.jpg" value="9">Cute Kitten </option>
+                  <option value="nada">nada</option>
+                  <option id="1" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/pollo1.jpg" value="1">Asado</option>
+                  <option id="2" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/pollo2.jpg" value="2">Picoso</option>
+                  <option id="3" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/pollo1.jpg" value="3">BBQ</option>
+                  <option id="4" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/pollo2.jpg" value="4">Búfalo</option>
+                   <option id="5" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/pollo1.jpg" value="5">Parmesano</option>
+                  <option id="6" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/pollo2.jpg" value="6">Otro</option>
+                  <option id="7" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/pollo1.jpg" value="7">Atún</option>
+                  <option id="8" data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/marisco2.jpg" value="8">Surimi</option>
+                  <option id="9"  data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/marisco1.jpg" value="9">Cute Kitten </option>
             </select>
             <input type="button" class="btn btn-primary btnSiguientevalid" value="Siguiente" />
          </div>
     <div id="paso3" class="tab-pane fade">
     <h3>Barra fría</h3>
           <select id="barra_fria" onChange="calcularCalorias()" class="image-picker show-labels limit_callback show-html"  multiple="multiple">
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_1.jpg" value="1">Mango</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_2.jpg" value="2">Uva</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_3.jpg" value="3">Manzana</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_4.jpg" value="4">Plátano</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_5.jpg" value="5">Sandía</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_1.jpg" value="6">Mango</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_2.jpg" value="7">Uva</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_3.jpg" value="8">Manzana</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_4.jpg" value="9">Plátano</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_5.jpg" value="10">Sandía</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_1.jpg" value="11">Mango</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_2.jpg" value="12">Uva</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_3.jpg" value="13">Manzana</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_4.jpg" value="14">Plátano</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_5.jpg" value="15">Sandía</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_1.jpg" value="16">Mango</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_2.jpg" value="17">Uva</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_3.jpg" value="18">Manzana</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_4.jpg" value="19">Plátano</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_5.jpg" value="20">Sandía</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_1.jpg" value="21">Mango</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/img_2.jpg" value="22">Uva</option>    
+              <option value="nada">nada</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_1.jpg" value="1">Mango</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_2.jpg" value="2">Uva</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_3.jpg" value="3">Manzana</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_4.jpg" value="4">Plátano</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_5.jpg" value="5">Sandía</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_1.jpg" value="6">Mango</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_2.jpg" value="7">Uva</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_3.jpg" value="8">Manzana</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_4.jpg" value="9">Plátano</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_5.jpg" value="10">Sandía</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_1.jpg" value="11">Mango</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_2.jpg" value="12">Uva</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_3.jpg" value="13">Manzana</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_4.jpg" value="14">Plátano</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_5.jpg" value="15">Sandía</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_1.jpg" value="16">Mango</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_2.jpg" value="17">Uva</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_3.jpg" value="18">Manzana</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_4.jpg" value="19">Plátano</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_5.jpg" value="20">Sandía</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_1.jpg" value="21">Mango</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/img_2.jpg" value="22">Uva</option>    
         </select>
          <a class="btn btn-primary btnAtras">Atras</a>
          <a class="btn btn-primary btnSiguiente">Siguiente</a>
@@ -76,31 +78,84 @@
     <div id="paso4" class="tab-pane fade">
     <h3>Aderezos</h3> 
      <select id="aderezos" onChange="calcularCalorias()" class="image-picker show-labels limit_callback show-html" multiple="multiple">
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/aderezo.png" value="1">Ranch</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/aderezo.png" value="2">Chipotle</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/aderezo.png" value="3">Cilantro</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/aderezo.png" value="4">Mil islas</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/aderezo.png" value="5">César</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/aderezo.png" value="6">Vinagreta</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/aderezo.png" value="7">Italiano</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/aderezo.png" value="8">Aceite de Oliva</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/aderezo.png" value="9">Mostaza miel</option>
+              <option value="nada">nada</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/aderezo.png" value="1">Ranch</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/aderezo.png" value="2">Chipotle</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/aderezo.png" value="3">Cilantro</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/aderezo.png" value="4">Mil islas</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/aderezo.png" value="5">César</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/aderezo.png" value="6">Vinagreta</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/aderezo.png" value="7">Italiano</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/aderezo.png" value="8">Aceite de Oliva</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/aderezo.png" value="9">Mostaza miel</option>
     </select>
         <a class="btn btn-primary btnAtras">Atras</a>
         <input type="button" class="btn btn-primary btnSiguiente" value="Siguiente"  />
     </div>
     <div id="paso5" class="tab-pane fade">
     <h3>Croutones</h3>
-        <select id="extras" onChange="calcularCalorias()" class="image-picker show-labels show-htm">
+        
+        <select id="extras" onChange="calcularCalorias()" class="image-picker show-labels limit_callback show-htm" multiple="multiple">
+             <option value="nada">nada</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/croutones.png" value="1">Croutones</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/croutones.png" value="2">Sopita</option>
+        </select>
+        <h3>Bebidas</h3>
+         <select id="bebidas" onChange="calcularCalorias()" class="image-picker show-labels limit_callback show-htm" multiple="multiple">
               <option value="nada">nada</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/croutones.png" value="1">Croutones</option>
-              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20" data-img-src="<?php echo $this->basePath(); ?>/img/crea_ensalada/croutones.png" value="2">Sopita</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/coca.jpg" value="1">Coca cola lata</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/coca2.jpg" value="2">Coca 600ml</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/fanta.jpg" value="3">Fanta lata</option> 
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/peper.jpg" value="4">Peper</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/pepsi.jpg" value="5">Pepsi</option>
+              <option data-calfat="5" data-fat="8" data-satfat="7" data-chol="5" data-sod="2" data-carbo="3" data-fiber="9" data-sugar="5" data-protein="3" data-transfat="4" data-cal="20"  data-img-src="<?php echo $this->BasePath(); ?>/img/crea_ensalada/sprite.jpg" value="6">Sprite</option> 
         </select>
         <a class="btn btn-primary btnAtras">Atras</a>
-        <button type="button" class="btn btn-success btn-compra" ><span class="glyphicon glyphicon-shopping-cart"></span> Añadir al carrito</button>
+       <button type="button" class="btn btn-success btn-compra" data-toggle="modal" data-target="#nombra-ensalada">Terminar </button>
     </div>
       </div>
    </div>
+      <div class="modal fade" id="nombra-ensalada" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">Nombra tu ensalada</h4>
+        </div>
+        <div class="modal-body">
+       <form action="">
+                <div class="form-group">
+                  <label for="name">Nombre:</label>
+                  <input type="text" class="form-control" id="name" required autofocus placeholder="Nombre de tu ensalada">
+                </div>
+                <div class="form-group">
+                  <label >Cantidad de ordenes:</label>
+                      <select class="form-control" id="cant">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                      </select>
+               </div>
+               <div class="form-group">
+                  <label for="comment">Comentarios:</label>
+                  <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+        <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-shopping-cart"></span> Añadir al carrito</button>
+        </form>
+        </div>
+        <div class="modal-footer">
+                
+        </div>
+      </div>
+    </div>
+  </div>
     <div class="col-xs-12 col-md-6">
     <h3>Información Nutrimental.</h3>
     <table class="table table-striped table-bordered">
